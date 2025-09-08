@@ -1,0 +1,114 @@
+<!-- //angular theory part -->
+
+<!-- it is library -->
+<!-- npm i @angular/cli -g  = to run the anuglar code -->
+ <!-- Ng new app2 --no-standalone = to create new angular app  -->
+
+ <!-- Folder structure -->
+<!-- anuglar is build in typescript -->
+ <!-- why angular?
+ - JS type is not mandatory to declare but anuglar type is mandatory
+ - string, array
+
+ heart of the file - node_modules
+ -it has all inbuild functions written in JS
+
+ package.json is used to install the node_modules and it has only current version history
+ ng server, npm start to start the application
+ (18.0.0 to 19.2.0) difference in angular version
+
+ -npm install is to create the node_modules
+
+ tsconfig.json - it is the config file written in typescript, how ts works
+ angular.json - need to create file inside the src (which is sourceroot),
+                prefix -> to append the name while creating a new file
+package-lock.json - it has complete version history
+
+angular code is started in index.html, it will move to another package,
+all the codes will be written in this file only
+
+app-root -> it directs the site to use which html page(app.component.html)
+
+ng server -o to open the own server
+angular is class based
+to access javascript code into anuglar using {{}}
+- one way binding -> can view the exisisting variable
+-two way binding -> can view the exisitign variable and also can update its value
+
+template driven forms
+ngModel -> to use ngModule ,
+        -> add the formsModule in app.modules.ts under imports
+module is similar to parent
+-parent of all component and all submouldes
+
+
+reactive forms
+- 
+-constructor - to inject the dependencies -->
+Advantages of reactive forms
+--no manual code for multiple form controls
+--form group is used to group the form controls
+--form array is used to create multiple form controls dynamically
+--form builder is used to create form group and form control
+--form control is used to create single form control
+--form control name is used to bind the form control to the html element
+--form group directive is used to bind the form group to the html element
+--form array name is used to bind the form array to the html element
+--form builder is used to create form group and form control
+
+Advantages of template driven forms
+--manul code for multiple form controls
+--ngModel is used to create form control
+--ngModelGroup is used to group the form controls
+--ngForm is used to bind the form group to the html element 
+--ngFor is used to create multiple form controls dynamically
+--ngModel is used to bind the form control to the html element
+--ngModelGroup is used to bind the form group to the html element
+--ngFor is used to bind the form array to the html element
+
+class 2 - 8th Sep 2025
+Decorators -> input and output
+--it is used to define the metadata of the class
+--it is used to define the component
+--it is used to define the directive, pipe, service, module
+--it is used to define the selector, template, style, providers
+--it is used to define the selector, template, style, providers
+
+to create new file - ng g c filename
+--ng g c filename --skip-tests = to create new component without test file
+--ng g c filename --flat = to create new component without folder
+--ng g c filename --inline-style = to create new component without css file
+--ng g c filename --inline-template = to create new component without html file
+--ng g c filename --skip-import = to create new component without importing in app.module.ts
+--ng g c filename --export = to create new component and export in app.module.ts
+--ng g c filename --module=app = to create new component and import in app.module.ts
+--ng g c filename --module=filename = to create new component and import in specific module
+
+purpose of component
+--it is used to define the view of the application
+--it is used to define the logic of the application
+--it is used to define the style of the application
+--it is used to define the metadata of the application
+--it is used to define the selector, template, style, providers
+
+input decorator
+--it is used to define the input property of the component
+--it is straight forward
+--it is used to define the data type of the input property
+output decorator
+--it is used to define the output property of the component
+--it is used to define the event emitter of the component   
+
+directives
+--it is used to define the behavior of the application
+--it is used to define the structure of the application
+--it is used to define the attribute of the application 
+--it is used to define the component, pipe, service, module
+--it is used to define the selector, template, style, providers
+
+types of directives
+--component directive
+--structural directive - changes the structure of the dom - *ngIf, *ngFor
+        --it is same as js - if and for loop
+--attribute directive - box model - []
+--custom directive
