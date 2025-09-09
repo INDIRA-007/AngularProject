@@ -12,3 +12,8 @@
   <input type="text" formControlName="EmailId"> <br><br>
   <button [disabled]="this.formGroup.valid">Submit</button>
 </form>
+
+<app-cart [value]="counter"></app-cart>
+ <button (click)="increment()">Cart Increment (+) </button> <br>
+  <br>  
+ <button (click)="decrement()">Cart Decrement (-) </button>

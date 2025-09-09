@@ -6,11 +6,14 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './app.html',
   standalone: false,
   styleUrl: './app.css'
+  
 })
 export class App {
   // protected readonly title = signal('app1');
   title = 'app1';
   formGroup!: FormGroup;
+  counter: number =0;
+
 
   constructor(private builder: FormBuilder) { 
     //to inject the dependencies
@@ -25,4 +28,16 @@ export class App {
     console.log(this.formGroup);
     
   }
+
+  increment(){
+    this.counter++;
+    console.log("Count increment: "+this.counter);
+  }
+  decrement()
+  {
+    this.counter--;
+    console.log("Count decrement: "+this.counter);
+  }
+
+
 }
